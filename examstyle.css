@@ -3,7 +3,7 @@
 
 /* Style for body header footer */
 body {
-    background-color:#171616;
+    background-color:#363232;
     color:#FFFFFF
 }
 
@@ -16,4 +16,69 @@ header {
     justify-content: space-between;
     gap: 10px;
     margin-bottom: 20px;
+}
+
+.logo_img {
+    width: 170px;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Michroma';
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Michroma';
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Michroma';
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    font-family: 'Michroma';
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+
+/* Kontakt formular style*/ 
+input[type=text], select, textarea { 
+    width: 100%; / bredde af tekst boxe / 
+    padding: 10px; / højden af tekst boxe/ 
+    border: 2px solid #3f3832; / kanten rundt om tekst boxe / 
+    border-radius: 6px; / Runde hjørner / 
+    box-sizing: border-box; / Make sure that padding and width stays in place / 
+    margin-top: 6px; / Add a top margin / 
+    margin-bottom: 16px; / Bottom margin / 
+    resize: vertical / Allow the user to vertically resize the textarea (not horizontally) / } 
+    /* Send besked knap style */ 
+    input[type=submit] { 
+    background-color: #F74C08; 
+    color: #171616; 
+    padding: 12px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; } 
+    /* Send besked knap hover style */ 
+    input[type=submit]:hover { 
+    background-color: #3f3832; 
+    opacity: 50%; }
+
+footer {
+    text-align: right;
+    background: #171616;
+    display: flex;
+    justify-content: space-evenly;
 }
