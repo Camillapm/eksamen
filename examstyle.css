@@ -52,6 +52,38 @@ nav ul li a {
     color: #FFFFFF;
 }
 
+.image-row {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: flex;
+}
+
+.text-row {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 30px;
+
+}
+
+.projekt_img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+.projekt_img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px #171616
+}
+
 
 /* Kontakt formular style*/ 
 input[type=text], select, textarea { 
@@ -62,7 +94,7 @@ input[type=text], select, textarea {
     box-sizing: border-box; /* Padding og width bliver på sin plads */ 
     margin-top: 5px; /* Tilføj top margin */ 
     margin-bottom: 16px; /* Bottom margin */ 
-    resize: vertical /* Tillad brugeren at resize textarea (ikke horisontalt) */ } 
+    resize: vertical /* Tillad brugeren at resize tekstområde (ikke horisontalt) */ } 
     /* Send besked knap style */ 
     input[type=submit] { 
     background-color: #F74C08; 
