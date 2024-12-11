@@ -55,21 +55,21 @@ nav ul li a {
 
 /* Kontakt formular style*/ 
 input[type=text], select, textarea { 
-    width: 100%; / bredde af tekst boxe / 
-    padding: 10px; / højden af tekst boxe/ 
-    border: 2px solid #3f3832; / kanten rundt om tekst boxe / 
-    border-radius: 6px; / Runde hjørner / 
-    box-sizing: border-box; / Make sure that padding and width stays in place / 
-    margin-top: 6px; / Add a top margin / 
-    margin-bottom: 16px; / Bottom margin / 
-    resize: vertical / Allow the user to vertically resize the textarea (not horizontally) / } 
+    width: 100%; /* bredde af tekstbokse */ 
+    padding:10px; /* højden af tekstbokse */ 
+    border: 2px solid #3f3832; /* kanten rundt om tekstbokse */ 
+    border-radius: 6px; /* Runde hjørner */ 
+    box-sizing: border-box; /* Padding og width bliver på sin plads */ 
+    margin-top: 5px; /* Tilføj top margin */ 
+    margin-bottom: 16px; /* Bottom margin */ 
+    resize: vertical /* Tillad brugeren at resize textarea (ikke horisontalt) */ } 
     /* Send besked knap style */ 
     input[type=submit] { 
     background-color: #F74C08; 
     color: #171616; 
     padding: 12px 20px; 
     border: none; 
-    border-radius: 4px; 
+    border-radius: 10px; 
     cursor: pointer; } 
     /* Send besked knap hover style */ 
     input[type=submit]:hover { 
