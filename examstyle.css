@@ -1,2 +1,19 @@
-<!DOCTYPE html>
-<html lang="da">
+/*Farvepalette HEX koder: Sort: 171616 Rød: DB0010 Hvid: FFFFFF Orange: F74C08 Sortgrå: 363232 */
+
+
+/* Style for body header footer */
+body {
+    background-color:#171616;
+    color:#FFFFFF
+}
+
+header {
+    background:#171616;
+    text-align: left;
+}
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
