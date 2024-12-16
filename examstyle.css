@@ -4,23 +4,35 @@
 /* Style for body header footer */
 body {
     background-color:#363232;
-    color:#FFFFFF
+    color:#FFFFFF;
 }
 
 header {
     background:#171616;
     text-align: left;
-}
-.image-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-bottom: 20px;
+    position: static;
+    top: 0;
+    z-index: 10px;
+    height: 5cm 0;
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    outline: 1px solid red;
 }
 
 .logo_img {
-    width: 170px;
+    width: 130px;
     height: auto;
+}
+
+.logo-link {
+    text-decoration: none;
+    pointer-events: auto;
+}
+
+.logo-link:hover .logo_img {
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
 }
 
 h1 {
@@ -39,17 +51,31 @@ p {
     font-family: 'Michroma';
 }
 
+
 nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px;
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 1rem;
+    top: 0;
+    outline: 1px solid red;
 }
 
 nav ul li a {
     font-family: 'Michroma';
     font-size: 20px;
     color: #FFFFFF;
+    margin: 0;
+}
+
+.image-row-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .image-row {
@@ -57,31 +83,25 @@ nav ul li a {
     padding: 5px;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: flex;
-}
-
 .text-row {
     display: flex;
     justify-content: space-around;
     text-align: center;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
 }
 
 .projekt_img {
     width: 30px;
     height: auto;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 
 }
 
 .projekt_img:hover {
-    transform: scale(1.2);
-    box-shadow: 0 4px 8px #171616
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(23, 22, 22, 0.5);
 }
 
 
@@ -94,23 +114,29 @@ input[type=text], select, textarea {
     box-sizing: border-box; /* Padding og width bliver på sin plads */ 
     margin-top: 5px; /* Tilføj top margin */ 
     margin-bottom: 16px; /* Bottom margin */ 
-    resize: vertical /* Tillad brugeren at resize tekstområde (ikke horisontalt) */ } 
-    /* Send besked knap style */ 
-    input[type=submit] { 
+    resize: vertical /* Tillad brugeren at resize tekstområde (ikke horisontalt) */ 
+} 
+
+/* Send besked knap style */ 
+input[type=submit] { 
     background-color: #F74C08; 
     color: #171616; 
     padding: 12px 20px; 
     border: none; 
     border-radius: 10px; 
-    cursor: pointer; } 
-    /* Send besked knap hover style */ 
-    input[type=submit]:hover { 
+    cursor: pointer; 
+} 
+
+/* Send besked knap hover style */ 
+input[type=submit]:hover { 
     background-color: #3f3832; 
-    opacity: 50%; }
+    opacity: 0.5; 
+}
 
 footer {
     text-align: right;
     background: #171616;
     display: flex;
     justify-content: space-evenly;
+    padding: 10px;
 }
