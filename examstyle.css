@@ -17,11 +17,10 @@ header {
     padding: 10px;
     width: 100%;
     display: grid;
-    outline: 1px solid red;
 }
 
 .logo_img {
-    width: 130px;
+    width: 180px;
     height: auto;
 }
 
@@ -31,8 +30,8 @@ header {
 }
 
 .logo-link:hover .logo_img {
-    opacity: 0.4;
-    transition: opacity 0.3s ease;
+    opacity: 0.10;
+    transition: opacity 0.5s ease;
 }
 
 h1 {
@@ -53,6 +52,7 @@ p {
 
 
 nav ul {
+    position: fixed;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -61,7 +61,7 @@ nav ul {
     display: flex;
     gap: 1rem;
     top: 0;
-    outline: 1px solid red;
+    right: 0;
 }
 
 nav ul li a {
@@ -69,6 +69,13 @@ nav ul li a {
     font-size: 20px;
     color: #FFFFFF;
     margin: 0;
+    text-decoration: none;
+    transition: color 0.9s, transform 0.9s ease;
+}
+
+nav ul li a:hover {
+    color: #171616;
+    transform: scale(1.1);
 }
 
 .image-row-container {
@@ -132,6 +139,29 @@ input[type=submit]:hover {
     background-color: #3f3832; 
     opacity: 0.5; 
 }
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+#billede_ommig {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.image-text-container {
+/* container til tekst og billede*/
+display: flex;
+align-items: center;
+gap: 10px;
+
+}
+
+
+
 
 footer {
     text-align: right;
