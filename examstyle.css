@@ -87,37 +87,41 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
-.image-row-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-bottom: 20px;
+
+/*Projekt-container styling*/
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
-.image-row {
-    flex: 33.33%;
-    padding: 5px;
-}
-
-.text-row {
-    display: flex;
-    justify-content: space-around;
+/*Projekt-element styling*/
+.project-item {
     text-align: center;
-    gap: 10px;
-    margin-bottom: 20px;
-
 }
 
-.projekt_img {
-    width: 30px;
+/*Billede styling*/
+.project_img {
+    width: 80%;
     height: auto;
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
-
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2 ease, box-shadow 0.2s ease;
 }
 
 .projekt_img:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(23, 22, 22, 0.5);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/*Tekst styling*/
+.project-item p {
+    font-family: 'Michroma';
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 10px;
 }
 
 
@@ -161,6 +165,7 @@ img {
     height: auto;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .image-text-container {
