@@ -132,6 +132,8 @@ input[type=submit] {
     border: none; 
     border-radius: 10px; 
     cursor: pointer; 
+    gap: 10px;
+    margin-bottom: 16px;
 } 
 
 /* Send besked knap hover */ 
@@ -200,11 +202,23 @@ gap: 10px;
     object-fit: contain;
 }
 
+/*styling af footer*/
 
-footer {
+.footer-content {
     text-align: right;
     background: #171616;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
 }
+
+.footer-content {
+    flex: 2;
+    text-align: right;
+}
+
+.footer-logo-img {
+    max-width: 100px;
+    height: auto;
+} 
