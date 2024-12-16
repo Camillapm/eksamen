@@ -134,7 +134,7 @@ input[type=submit] {
     cursor: pointer; 
 } 
 
-/* Send besked knap hover style */ 
+/* Send besked knap hover */ 
 input[type=submit]:hover { 
     background-color: #3f3832; 
     opacity: 0.5; 
@@ -160,7 +160,45 @@ gap: 10px;
 
 }
 
+/* Forside styling */
 
+#intro {
+    background-color: #171616;
+    color: #F74C08;
+}
+
+#intro h1 {
+    font-family: 'Michroma', sans-serif;
+    font-size: 48px;
+    margin: 0;
+    padding-bottom: 10px;
+    text-transform: uppercase; /*versaler*/
+}
+
+#intro p {
+    font-family: 'Michroma' , sans-serif;
+    font-size: 20px;
+    margin: auto;
+    font-weight: 300;
+    text-align: center;
+}
+
+/*Billede container*/
+.image-container {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.intro-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 
 footer {
