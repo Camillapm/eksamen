@@ -14,9 +14,15 @@ header {
     top: 0;
     z-index: 1000;
     height: 5cm 0;
-    padding: 10px;
+    padding: 10px 20px;
     width: 100%;
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
 .logo_img {
@@ -36,18 +42,20 @@ header {
 
 h1 {
     font-family: 'Michroma';
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
 }
 
 h2 {
     font-family: 'Michroma';
-    font-size: 30px;
-    text-align: center;
+    font-size: 25px;
+    text-align: left;
 }
 
 p {
     font-family: 'Michroma';
+    font-size: medium;
+    text-align: left;
 }
 
 
@@ -161,6 +169,23 @@ display: flex;
 align-items: center;
 gap: 10px;
 
+}
+
+/*ikoner på om mig*/
+
+.pen_ikon {
+    width: 50px;
+    height: 50px;
+}
+
+.image_ikon {
+    width: 50px;
+    height: 50px;
+}
+
+.adobe_ikon {
+    width: 50px;
+    height: 50px;
 }
 
 /* Forside styling */
