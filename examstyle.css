@@ -99,21 +99,28 @@ nav ul li a:hover {
 
 /*Projekt-element styling*/
 .project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    width: 100%;
 }
 
 /*Billede styling*/
-.project_img {
-    width: 80%;
-    height: auto;
-    border-radius: 10px;
+.projekt_img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    aspect-ratio: 3 / 2;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2 ease, box-shadow 0.2s ease;
 }
 
 .projekt_img:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(233, 100, 6, 0.3);
 }
 
 /*Tekst styling*/
