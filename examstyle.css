@@ -13,7 +13,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    height: 5cm 0;
+    height: 5cm;
     padding: 10px 20px;
     width: 100%;
     display: flex;
@@ -115,7 +115,7 @@ nav ul li a:hover {
     aspect-ratio: 3 / 2;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2 ease, box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease;
 }
 
 .projekt_img:hover {
